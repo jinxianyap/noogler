@@ -1,14 +1,10 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import ChatScreen from './components/chatscreen';
+import "./App.css";
+import MyNoogler from "./Noogler/MyNoogler";
 
 function App() {
   return (
-    <div className="body">
-      <div className="App">
-        <ChatScreen />;
-      </div>
+    <div>
+      <MyNoogler />
     </div>
   );
 }
