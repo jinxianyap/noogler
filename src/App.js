@@ -11,10 +11,6 @@ function App() {
         <ExploreGoogle />;
       </div>
     </div>
-
-
-
-
   );
 }
 
