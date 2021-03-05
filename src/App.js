@@ -21,8 +21,8 @@ function App() {
             height: "250px", 
             borderRadius: "50%",
             borderTop: "7px solid #DB4437",
-            borderRight: "7px solid blue",
-            borderBottom: "7px solid green",
+            borderRight: "7px solid #4285F4",
+            borderBottom: "7px solid #0F9D58",
             borderLeft: "7px solid #F4B400",
           }}
         />
@@ -30,11 +30,28 @@ function App() {
           
 
       </div>
-      <Button variant="primary" size = "lg" className = "buttonPlacement" style = {{ marginLeft: "190px"}}>Home</Button> 
-      <Button variant="success" size = "lg" className = "buttonPlacement" >My Noogle</Button>{' '} 
-      <Button variant="warning" size = "lg" className = "buttonPlacement">Explore</Button>{' '}
-      <Button variant="danger" size = "lg" className = "buttonPlacement">Help</Button>{' '}
-      
+
+      <div className = "buttonsBar">
+      <Button variant="primary" size = "lg" className = "buttonPlacement" 
+      style = {{ marginLeft: "60px",
+      backgroundColor: "#4285F4",
+      borderColor: "#4285F4"
+      }}>Home</Button> 
+      <Button variant="success" size = "lg" className = "buttonPlacement"
+      style = {{ 
+      backgroundColor: "#0F9D58",
+      borderColor: "#0F9D58"
+      }} >My Noogle</Button>{' '} 
+      <Button variant="warning" size = "lg" className = "buttonPlacement"style = {{ 
+      backgroundColor: "#F4B400",
+      borderColor: "#F4B400"
+      }}>Explore</Button>{' '}
+      <Button variant="danger" size = "lg" className = "buttonPlacement"
+      style = {{
+      backgroundColor: "#DB4437",
+      borderColor: "#DB4437"
+      }}>Help</Button>{' '}
+      </div>
     
       
       
