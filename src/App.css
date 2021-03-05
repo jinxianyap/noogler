@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.body {
+  background-color: #282c34;
+  height: 100vh;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,6 +19,17 @@
   align-items: center;
   font-size: calc(10px + 2vmin);
 
+}
+
+.buttonPlacement {
+  margin-top: 450px;
+  margin-right: 80px;
+  color: white;
+  font-weight: bold;
+}
+
+.buttonPlacement:hover {
+  color: black;
 }
 
 .paragraphDecoration{
