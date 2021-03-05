@@ -1,6 +1,6 @@
 import jordansPic from './jordansPic.jpeg';
 import Image from 'react-bootstrap/Image';
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
 import './App.css';
 
 function App() {
