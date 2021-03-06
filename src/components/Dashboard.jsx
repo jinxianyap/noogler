@@ -3,6 +3,7 @@ import { Card, Button, Container, Row, Col } from "react-bootstrap";
 import './Dashboard.css';
 import michellePic from '../assets/michelle.jpeg';
 import volunteering from '../assets/volunteering.jpeg';
+import googleOffice from '../assets/googleOffice.jpeg';
 
 const Dashboard = () => {
   return (
@@ -45,7 +46,7 @@ const Dashboard = () => {
             <Card style={{ width: "15rem" }}>
               <Card.Img
                 variant="top"
-                src="https://rg-group.co.uk/wp-content/uploads/2019/08/CareHome1.jpg"
+                src={googleOffice}
                 style={{ height: 125 }}
               />
               <Card.Body>
