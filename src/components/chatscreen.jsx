@@ -1,5 +1,5 @@
 import React from "react";
-import jordansPic from "../assets/jordansPic.jpeg";
+import jordansPic from "../assets/jordansCirclePic.jpg";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
@@ -37,7 +37,7 @@ const steps = [
   },
   {
     id: '3',
-    message: 'Nice! Press the yellow Explore button to get started',
+    message: 'Nice! Close this window and press the yellow Explore button to get started',
     end: true,
   },
   {
@@ -102,7 +102,7 @@ class ChatScreen extends React.Component {
           src={jordansPic}
           roundedCircle
           style={{
-            width: "200px",
+            width: "250px",
             height: "250px",
             borderRadius: "50%",
             borderTop: "7px solid #DB4437",
@@ -141,6 +141,10 @@ class ChatScreen extends React.Component {
               backgroundColor: "#4285F4",
               borderColor: "#4285F4",
             }}
+            onClick = {(e) => {
+              e.preventDefault();
+              window.location.href='http://google.com';
+            }}
           >
             Home
           </Button>
@@ -152,9 +156,13 @@ class ChatScreen extends React.Component {
               backgroundColor: "#0F9D58",
               borderColor: "#0F9D58",
             }}
+            onClick = {(e) => {
+              e.preventDefault();
+              window.location.href='http://google.com';
+            }}
           >
             My Noogle
-          </Button>{" "}
+          </Button>
           <Button
             variant="warning"
             size="lg"
@@ -163,9 +171,13 @@ class ChatScreen extends React.Component {
               backgroundColor: "#F4B400",
               borderColor: "#F4B400",
             }}
+            onClick = {(e) => {
+              e.preventDefault();
+              window.location.href='http://google.com';
+            }}
           >
             Explore
-          </Button>{" "}
+          </Button>
           <Button
             variant="danger"
             size="lg"
@@ -174,9 +186,13 @@ class ChatScreen extends React.Component {
               backgroundColor: "#DB4437",
               borderColor: "#DB4437",
             }}
+            onClick = {(e) => {
+              e.preventDefault();
+              window.location.href='http://google.com';
+            }}
           >
             Help
-          </Button>{" "}
+          </Button>
         </div>
       </div>
     )

@@ -1,5 +1,5 @@
 .chatscreen-page {
-    padding-top: 5rem;
+    padding-top: 2rem;
     /* height: 100%; */
 }
 
@@ -11,7 +11,7 @@
 }
 
 .buttonPlacement {
-    margin-top: 50px;
+    margin-top: 3%;
     margin-right: 100px;
     color: white;
     font-weight: bold;
@@ -25,10 +25,9 @@
     color: black;
 }
 
-
 .speech-box {
     width: 300px;
-    margin: 50px auto;
+    margin: 20px auto;
     border: 4px solid #4285F4;
     padding: 20px;
     text-align: center;
@@ -47,6 +46,6 @@
     border-right: 10px solid transparent;
     border-top: 10px solid transparent;
     border-bottom: 10px solid #4285F4;
-    right: 50%;
+    right: 47%;
     top: -23px;
 }

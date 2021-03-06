@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="body">
       <div className="App">
-        <ChatScreen />;
+        <ChatScreen />
       </div>
     </div>
   );
