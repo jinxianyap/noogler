@@ -29,7 +29,7 @@ class ExploreGoogle extends React.Component {
     return (
       <Col xs={3} key={key} className="item-cols">
         <Card onClick={() => this.setShow(true)}>
-          <Card.Img variant="top" src={data.img} />
+          <Card.Img variant="top" src={data.img}/>
           <Card.Body className="card-text">
             <Card.Title>{data.name}</Card.Title>
             <Card.Text>
@@ -114,10 +114,10 @@ class ExploreGoogle extends React.Component {
                 {this.generateGrid(this.groups)}
             </Tab>
             <Tab eventKey="events" title="Events" className="explore-tabs">
-              
+            {this.generateGrid(this.events)}
             </Tab>
             <Tab eventKey="opportunities" title="Opportunities" className="explore-tabs">
-            
+            {this.generateGrid(this.opportunities)}
             </Tab>
           </Tabs>
         </div>
