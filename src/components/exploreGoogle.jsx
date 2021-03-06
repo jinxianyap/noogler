@@ -15,6 +15,10 @@ class ExploreGoogle extends React.Component {
     this.setShow = (val) => {
       this.setState({show: val});
     };
+
+    this.setClick = (val) =>{
+      this.setState({clicked: val});
+    };
   }
   
   getCard() {
@@ -32,7 +36,7 @@ class ExploreGoogle extends React.Component {
         </Card>
         <Modal
           show={this.state.show}
-          onHide={() => this.setShow(false)}
+          onHide={() => {this.setShow(false); this.setClick(false);}}
           dialogClassName="modal-90w"
           aria-labelledby="example-custom-modal-styling-title"
         >
@@ -54,13 +58,22 @@ class ExploreGoogle extends React.Component {
           <Button
             size="lg"
             className="joinButtonPlacement"
-            style = {{
-              alignItems: 'center',
-              backgroundColor: "#F4B400",
-              borderColor: "#F4B400",              
-            }}
+            style = {this.state.clicked
+              ?
+              { 
+                alignItems: 'center',
+                backgroundColor: "grey",
+                borderColor: "grey",                   
+              }
+              : 
+              { alignItems: 'center',
+                backgroundColor: "#0F9D58",
+                borderColor: "#0F9D58"         
+              }}
+            onClick = {() => this.setClick(true)}
+            disabled = {this.state.clicked}
           >
-              Join
+            {this.state.clicked ? "Pending Confirmation" : "Join" } 
           </Button>
         </Modal.Body>
       </Modal>
