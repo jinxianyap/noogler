@@ -1,0 +1,25 @@
+.chatscreen-page {
+    padding-top: 5rem;
+    /* height: 100%; */
+}
+
+.buttonsBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.buttonPlacement {
+    margin-top: 450px;
+    margin-right: 100px;
+    color: white;
+    font-weight: bold;
+}
+
+.buttonPlacement:hover {
+    color: black;
+}
+
+.paragraphDecoration {
+    color: black;
+}

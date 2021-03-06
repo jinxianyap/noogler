@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: 100vh;
 }
 
 .body {
@@ -19,25 +20,4 @@
   align-items: center;
   font-size: calc(10px + 2vmin);
 
-}
-
-.buttonsBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.buttonPlacement {
-  margin-top: 450px;
-  margin-right: 100px;
-  color: white;
-  font-weight: bold;
-}
-
-.buttonPlacement:hover {
-  color: black;
-}
-
-.paragraphDecoration{
-  color: black;
 }
