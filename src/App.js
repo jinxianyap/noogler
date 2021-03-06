@@ -7,7 +7,7 @@ import Dashboardbox from './components/Dashboardbox';
 
 function App() {
   return (
-    <div style={{backgroundColor: "black",}}>
+    <div style={{backgroundColor: "#282c34",}}>
       <MyNoogler />
       <Dashboardbox/>
       <Dashboard/>

@@ -39,7 +39,7 @@
   margin: auto;
   width: 150px;
   height: 150px;
-  border: 3px solid black;
+  border: 3px solid #282c34;
   border-radius: 50%;
   margin-top: 1rem;
 }
@@ -65,7 +65,7 @@
   margin: auto;
   width: 200px;
   height: 50px;
-  background-color: black;
+  background-color: #282c34;
   color: white;
   border-radius: 10px;
   text-align: center;
