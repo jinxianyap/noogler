@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import MyNoogler from "./Noogler/MyNoogler";
+import MyNoogler from "./components/MyNoogler";
 
 function App() {
   return (

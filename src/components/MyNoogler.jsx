@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./styles.css";
+import "./MyNoogler.css";
 
 export class MyNoogler extends Component {
   state = {
