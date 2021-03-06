@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="body">
       <div className="App">
-        <ExploreGoogle />;
+        <ExploreGoogle />
       </div>
     </div>
   );

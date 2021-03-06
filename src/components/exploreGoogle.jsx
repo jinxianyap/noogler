@@ -2,7 +2,8 @@ import React, {useState} from "react";
 import "./exploreGoogle.css";
 import { Tabs, Tab, Card, Container, Row, Col, Modal } from 'react-bootstrap';
 import dummyImage from "../assets/jordansPic.jpeg";
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
+import { groupsData, eventsData, opportunitiesData } from "./exploreGoogleData";
 
 class ExploreGoogle extends React.Component {
 
@@ -19,18 +20,20 @@ class ExploreGoogle extends React.Component {
     this.setClick = (val) =>{
       this.setState({clicked: val});
     };
+    this.groups = groupsData;
+    this.events = eventsData;
+    this.opportunities = opportunitiesData;
   }
   
-  getCard() {
+  getCard(data, key) {
     return (
-      <Col>
+      <Col xs={3} key={key} className="item-cols">
         <Card onClick={() => this.setShow(true)}>
-          <Card.Img variant="top" src={dummyImage} />
+          <Card.Img variant="top" src={data.img} />
           <Card.Body className="card-text">
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>{data.name}</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the bulk of
-              the card's content.
+              {data.shortDesc}
             </Card.Text>
           </Card.Body>
         </Card>
@@ -42,18 +45,12 @@ class ExploreGoogle extends React.Component {
         >
         <Modal.Header>
           <Modal.Title id="example-custom-modal-styling-title">
-            Group Name
+            {data.name}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <p>
-            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
-            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
-            ipsam atque a dolores quisquam quisquam adipisci possimus
-            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
-            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
-            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
-      
+            {data.desc}
           </p>
           <Button
             size="lg"
@@ -81,6 +78,21 @@ class ExploreGoogle extends React.Component {
     );
   }
 
+  generateGrid(data) {
+    var rows = [];
+    for (var i = 0; i < data.length; i = i + 4) {
+      var row = <Row>
+        {data.slice(i, i+4).map((dt, key) => this.getCard(dt, key))}
+      </Row>;
+      rows.push(row);
+    }
+    return (
+      <Container className="item-cards">
+        {rows}
+      </Container>
+    );
+  }
+
   render() {
     return (
       <div className="exploregoogle-page">
@@ -99,18 +111,13 @@ class ExploreGoogle extends React.Component {
         <div className="explore-content">
           <Tabs defaultActiveKey="groups" id="explore-tab-group">
             <Tab eventKey="groups" title="Groups" className="explore-tabs">
-              <Container className="item-cards">
-                <Row>
-                  {this.getCard()}
-                  {this.getCard()}
-                  {this.getCard()}
-                  {this.getCard()}
-                </Row>
-              </Container>
+                {this.generateGrid(this.groups)}
             </Tab>
             <Tab eventKey="events" title="Events" className="explore-tabs">
+              
             </Tab>
             <Tab eventKey="opportunities" title="Opportunities" className="explore-tabs">
+            
             </Tab>
           </Tabs>
         </div>
