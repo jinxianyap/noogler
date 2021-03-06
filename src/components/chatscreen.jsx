@@ -34,6 +34,8 @@ class ChatScreen extends React.Component {
           }}
         />
 
+        <div className="speech-box sb1">Hey! How can I help?</div>
+          
         <div className="buttonsBar">
           <Button
             variant="primary"
@@ -82,7 +84,7 @@ class ChatScreen extends React.Component {
           </Button>{" "}
         </div>
       </div>
-    );
+    )
   }
 }
 
