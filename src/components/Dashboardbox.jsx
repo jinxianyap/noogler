@@ -9,18 +9,18 @@ const Dashboardbox = () => {
             <Card style={{ width: "40rem" }}>
               <Card.Body>
                 <h5>Dashboard</h5>
-                <Card.Text>Your recently activity</Card.Text>
+                <Card.Text>Your recent activity</Card.Text>
 
                 <section>
                   <div className='row'>
                     <div className='col-4'>
                     <h6>
-                      Viewed Oppotunities
+                      Viewed Opportunities
                     </h6>
                     </div>
                     <div className='col-4'>
                     <h6>
-                      Saved Oppotunities
+                      Saved Opportunities
                     </h6>
                     </div>
                     <div className='col-4'>

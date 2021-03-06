@@ -24,12 +24,13 @@ export class MyNoogler extends Component {
     return (
       <div className="page">
         <div className="container">
+
         <Image
           src={profileImg}
           roundedCircle
           style={{
             width: "200px",
-            height: "250px",
+            height: "200px",
             borderRadius: "50%",
             borderTop: "7px solid #DB4437",
             borderRight: "7px solid #4285F4",
@@ -37,21 +38,23 @@ export class MyNoogler extends Component {
             borderLeft: "7px solid #F4B400",
           }}
         />
-      <input
-        type="file"
-        name="image-upload"
-        id="input"
-        accept="image/*"
-        onChange={this.imageHandler}
-      ></input>
-      <div className="label" style={{marginBottom:'100px'}}>
-        <label htmlFor="input" className="image-upload">
-          <i className="material-icons">add_photo_alternate</i>
+
+        <input
+          type="file"
+          name="image-upload"
+          id="input"
+          accept="image/*"
+          onChange={this.imageHandler}
+        ></input>
+
+        <div className="label" style={{marginBottom:'100px'}}>
+          <label htmlFor="input" className="image-upload">
+            <i className="material-icons">add_photo_alternate</i>
           Choose your photo
-        </label>
-      </div>
+          </label>
         </div>
 
+       </div>
       </div>
     );
   }

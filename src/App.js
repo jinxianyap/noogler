@@ -4,15 +4,11 @@ import './App.css';
 import MyNoogler from "./components/MyNoogler";
 import Dashboard from './components/Dashboard';
 import Dashboardbox from './components/Dashboardbox';
+import NooglerProfile from "./components/NooglerProfile";
 
 function App() {
   return (
-    <div style={{backgroundColor: "#282c34",}}>
-      <MyNoogler />
-      <Dashboardbox/>
-      <Dashboard/>
-
-    </div>
+      <NooglerProfile />
   );
 }
 
