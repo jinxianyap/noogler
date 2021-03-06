@@ -15,6 +15,14 @@ import kenya from "../assets/kenya.JPG"
 import india from "../assets/india.JPG"
 import malaysia from "../assets/Malaysia.JPG"
 import africa from "../assets/AfricaSummit.PNG"
+import shadow from "../assets/Shadow.JPG"
+import mentor from "../assets/Mentor.JPG"
+import startInit from "../assets/StartInitiative.JPG"
+import joinInit from "../assets/JoinInitiative.JPG"
+import volunteer from "../assets/Volunteer.PNG"
+import manage from "../assets/Manage.JPG"
+import cloud from "../assets/Cloud.JPG"
+import host from "../assets/Host.JPG"
 
 
 export const groupsData = [
@@ -24,8 +32,6 @@ export const groupsData = [
         members: 300,
         shortDesc: "BGN focuses on empowering the Black community at Google and beyond.",
         desc: "The Black Googler Network (BGN) is an employee resource group of Googlers with a mission to cultivate Black leaders at Google and beyond, empower the communities where we operate, and transform the tech industry to reflect the diversity of its users. Members of BGN sponsor many events throughout the year, including month-long activities for Black History Month, mentoring, and volunteer opportunities. ",
-        
-
     },
     {
         name: "Asian Googlers Network",
@@ -79,105 +85,106 @@ export const eventsData = [
         name: "Michelle Obama Talk",
         img: Michelle,
         members: 300,
-        shortDesc: "BGN - Some quick example text to build on the card title and make up the bulk of the card's content.",
+        shortDesc: "Come to hear Michelle Obama speak about her book 'Becoming', her role as First Lady and her upbringing in Chicago, Illinios.",
         desc: "BGN - Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde commodi aspernatur enim, consectetur. Cumque deleniti temporibus ipsam atque a dolores quisquam quisquam adipisci possimus laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia reiciendis porro quo magni incidunt dolore amet atque facilis ipsum",
     },
     {
-        name: "Professional Insight Day",
+        name: "Leadership Insight Day",
         img: insight,
         members: 500,
-        shortDesc: "AGN - Some quick example text to build on the card title and make up the bulk of the card's content.",
+        shortDesc: "An event created to allow googlers to brush up on their leadership skills and learn recent psychological management techniques.",
         desc: "AGN - Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde commodi aspernatur enim, consectetur. Cumque deleniti temporibus ipsam atque a dolores quisquam quisquam adipisci possimus laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia reiciendis porro quo magni incidunt dolore amet atque facilis ipsum",
     },
     {
         name: "BGN Kenya Trip",
         img: kenya,
         members: 324,
-        shortDesc: "LGBT - Some quick example text to build on the card title and make up the bulk of the card's content.",
+        shortDesc: "Black Googlers Network- an annual event that allows members of the BGN to visit sights such as Masai Mara and the Nairobi scene.",
         desc: "LGBT - Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde commodi aspernatur enim, consectetur. Cumque deleniti temporibus ipsam atque a dolores quisquam quisquam adipisci possimus laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia reiciendis porro quo magni incidunt dolore amet atque facilis ipsum",
     },
     {
         name: "Indus India Trip",
         img: india,
         members: 435,
-        shortDesc: "SON - Some quick example text to build on the card title and make up the bulk of the card's content.",
+        shortDesc: "Indus Googlers Network- an annual event that allows members to visit sights such as the Taj Mahal and the Mumbai scene.",
         desc: "SON - Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde commodi aspernatur enim, consectetur. Cumque deleniti temporibus ipsam atque a dolores quisquam quisquam adipisci possimus laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia reiciendis porro quo magni incidunt dolore amet atque facilis ipsum",
     },
     {
         name: "Virtual Reality Evening",
         img: VRGN,
-        shortDesc: "AN - Some quick example text to build on the card title and make up the bulk of the card's content.",
+        shortDesc: "A evening filled with electronic devices, centred mostly around virtual reality and other forms of computer-generated stimulation.",
         desc: "AN - Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde commodi aspernatur enim, consectetur. Cumque deleniti temporibus ipsam atque a dolores quisquam quisquam adipisci possimus laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia reiciendis porro quo magni incidunt dolore amet atque facilis ipsum",
     },
     {
         name: "Asian Googlers Malaysian Trip",
         img: malaysia,
-        shortDesc: "NAN - Some quick example text to build on the card title and make up the bulk of the card's content.",
+        shortDesc: "Asian Googlers Network- an annual event that allows members to visit sights such as the Batu Caves and the Kuala Lumpur scene.",
         desc: "NAN - Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde commodi aspernatur enim, consectetur. Cumque deleniti temporibus ipsam atque a dolores quisquam quisquam adipisci possimus laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia reiciendis porro quo magni incidunt dolore amet atque facilis ipsum",
     },
     {
         name: "African Business Summit",
         img: africa,
-        shortDesc: "LON - Some quick example text to build on the card title and make up the bulk of the card's content.",
+        shortDesc: "An annual event for googlers who are interested in debating political, economic, social and environmental issues in Europe and Africa.",
         desc: "NAN - Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde commodi aspernatur enim, consectetur. Cumque deleniti temporibus ipsam atque a dolores quisquam quisquam adipisci possimus laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia reiciendis porro quo magni incidunt dolore amet atque facilis ipsum",
     },
     {
         name: "Google Veterans Family Day",
         img: family,
-        shortDesc: "LON - Some quick example text to build on the card title and make up the bulk of the card's content.",
+        shortDesc: "VetNet - An event for members of VetNet to take a trip to the beach with other veterans, with support from their families.",
         desc: "NAN - Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde commodi aspernatur enim, consectetur. Cumque deleniti temporibus ipsam atque a dolores quisquam quisquam adipisci possimus laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia reiciendis porro quo magni incidunt dolore amet atque facilis ipsum",
     },
 ];
+
 export const opportunitiesData = [
     {
-        name: "Black Googlers Network",
-        img: jordan,
+        name: "Shadow a CEO",
+        img: shadow,
         members: 300,
         shortDesc: "BGN - Some quick example text to build on the card title and make up the bulk of the card's content.",
         desc: "BGN - Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde commodi aspernatur enim, consectetur. Cumque deleniti temporibus ipsam atque a dolores quisquam quisquam adipisci possimus laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia reiciendis porro quo magni incidunt dolore amet atque facilis ipsum",
     },
     {
-        name: "Asian Googlers Network",
-        img: jordan,
+        name: "Mentor a student",
+        img: mentor,
         members: 500,
         shortDesc: "AGN - Some quick example text to build on the card title and make up the bulk of the card's content.",
         desc: "AGN - Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde commodi aspernatur enim, consectetur. Cumque deleniti temporibus ipsam atque a dolores quisquam quisquam adipisci possimus laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia reiciendis porro quo magni incidunt dolore amet atque facilis ipsum",
     },
     {
-        name: "LGBT Googlers Network",
-        img: jordan,
+        name: "Start an initiative",
+        img: startInit,
         members: 324,
         shortDesc: "LGBT - Some quick example text to build on the card title and make up the bulk of the card's content.",
         desc: "LGBT - Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde commodi aspernatur enim, consectetur. Cumque deleniti temporibus ipsam atque a dolores quisquam quisquam adipisci possimus laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia reiciendis porro quo magni incidunt dolore amet atque facilis ipsum",
     },
     {
-        name: "Some Other Network",
-        img: jordan,
+        name: "Join an initiative",
+        img: joinInit,
         members: 435,
         shortDesc: "SON - Some quick example text to build on the card title and make up the bulk of the card's content.",
         desc: "SON - Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde commodi aspernatur enim, consectetur. Cumque deleniti temporibus ipsam atque a dolores quisquam quisquam adipisci possimus laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia reiciendis porro quo magni incidunt dolore amet atque facilis ipsum",
     },
     {
-        name: "Another Network",
-        img: jordan,
+        name: "Volunteer at the BGN Hackathon",
+        img: volunteer,
         shortDesc: "AN - Some quick example text to build on the card title and make up the bulk of the card's content.",
         desc: "AN - Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde commodi aspernatur enim, consectetur. Cumque deleniti temporibus ipsam atque a dolores quisquam quisquam adipisci possimus laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia reiciendis porro quo magni incidunt dolore amet atque facilis ipsum",
     },
     {
-        name: "Not Another Network",
-        img: jordan,
+        name: "Project Management Certification",
+        img: manage,
         shortDesc: "NAN - Some quick example text to build on the card title and make up the bulk of the card's content.",
         desc: "NAN - Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde commodi aspernatur enim, consectetur. Cumque deleniti temporibus ipsam atque a dolores quisquam quisquam adipisci possimus laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia reiciendis porro quo magni incidunt dolore amet atque facilis ipsum",
     },
     {
-        name: "Last Other Network",
-        img: jordan,
+        name: "Google Cloud Developer Certification",
+        img: cloud,
         shortDesc: "LON - Some quick example text to build on the card title and make up the bulk of the card's content.",
         desc: "NAN - Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde commodi aspernatur enim, consectetur. Cumque deleniti temporibus ipsam atque a dolores quisquam quisquam adipisci possimus laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia reiciendis porro quo magni incidunt dolore amet atque facilis ipsum",
     },
     {
-        name: "Last Other Network",
-        img: jordan,
+        name: "Host a Network Event",
+        img: host,
         shortDesc: "LON - Some quick example text to build on the card title and make up the bulk of the card's content.",
         desc: "NAN - Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde commodi aspernatur enim, consectetur. Cumque deleniti temporibus ipsam atque a dolores quisquam quisquam adipisci possimus laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia reiciendis porro quo magni incidunt dolore amet atque facilis ipsum",
     },

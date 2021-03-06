@@ -13,6 +13,7 @@ class ExploreGoogle extends React.Component {
       show: false,
       clicked: false
     };
+      
     this.setShow = (val) => {
       this.setState({show: val});
     };
@@ -20,6 +21,7 @@ class ExploreGoogle extends React.Component {
     this.setClick = (val) =>{
       this.setState({clicked: val});
     };
+    
     this.groups = groupsData;
     this.events = eventsData;
     this.opportunities = opportunitiesData;
