@@ -36,7 +36,11 @@ export class MyNoogler extends Component {
             accept="image/*"
             onChange={this.imageHandler}
           ></input>
-          <div className="label">
+          <div className="label"
+          style = {{ fontSize: 12 }}
+
+          >
+
             <label htmlFor="input" className="image-upload">
               <i className="material-icons">add_photo_alternate</i>
               Change picture
@@ -45,26 +49,36 @@ export class MyNoogler extends Component {
         </div>
 
         <div className = "formPlacement"
-          style = {{ backgroundColor: "red", border: "5px solid yellow" }}
+          style = {{ backgroundColor: "white", paddingLeft: "30px", paddingRight: "30px", paddingTop: "30px", paddingBottom: "30px" }}
         >
-          <Form>
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-              <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-              </Form.Text>
+          <Form style = {{ fontSize: 12 }}>
+            <Form.Group controlId="formBasicEmail" >
+              <Form.Label >Full name</Form.Label>
+              <Form.Control type="text" placeholder="Jordan Edoimioya" readonly/>
             </Form.Group>
 
             <Form.Group controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
+              <Form.Label>Current Location</Form.Label>
+              <Form.Control type="text" placeholder="Wii U, UK" readonly />
             </Form.Group>
-            <Form.Group controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
+
+            <Form.Group controlId="formBasicPassword">
+              <Form.Label>Date of Birth</Form.Label>
+              <Form.Control type="number" placeholder="1890" readonly />
             </Form.Group>
-            <Button variant="primary" type="submit">
-              Submit
+
+            <Form.Group controlId="formBasicPassword">
+              <Form.Label>Email </Form.Label>
+              <Form.Control type="text" placeholder="Email" readonly />
+            </Form.Group>
+
+            <Form.Group controlId="formBasicPassword">
+              <Form.Label>Gender </Form.Label>
+              <Form.Control type="text" placeholder="gender" readonly />
+            </Form.Group>
+
+            <Button variant="primary" type="submit" style = {{ fontSize: 12 }}>
+              Edit your information
             </Button>
           </Form>
         </div>
