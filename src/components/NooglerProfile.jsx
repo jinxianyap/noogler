@@ -19,16 +19,16 @@ function NooglerProfile() {
           <div className = "box4NameTitle">
 
             <h1 id="pageHeading">
-              <span style={{color: 'white', textAlign: "center", fontSize: 50}}>My </span>
+              <span style={{color: 'white', textAlign: "center", fontSize: 115}}>My </span>
 
-              <span style={{color: '#4285F4', fontSize: 50}}>G</span>
-              <span style={{color: '#DB4437', fontSize: 50}}>o</span>
-              <span style={{color: '#F4B400', fontSize: 50}}>o</span>
-              <span style={{color: '#4285F4', fontSize: 50}}>g</span>
-              <span style={{color: '#0F9D58', fontSize: 50}}>l</span>
-              <span style={{color: '#DB4437', fontSize: 50}}>e</span>
+              <span style={{color: '#4285F4', fontSize: 115}}>N</span>
+              <span style={{color: '#DB4437', fontSize: 115}}>o</span>
+              <span style={{color: '#F4B400', fontSize: 115}}>o</span>
+              <span style={{color: '#4285F4', fontSize: 115}}>g</span>
+              <span style={{color: '#0F9D58', fontSize: 115}}>l</span>
+              <span style={{color: '#DB4437', fontSize: 115}}>e</span>
             </h1>
-            <h1 style = {{ fontSize: 38}}>Jordan Edoinmioya</h1>
+            <h1 style = {{ fontSize: 38}}>Jordan Edoimioya</h1>
             <h1 style = {{ fontSize: 30}}>Software Engineer L4</h1>
 
 

@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./styles.css";
-import jordansPic from "../assets/jordansPic.jpeg";
+import jordansPic from "../assets/jordansCirclePic.jpeg";
 import Image from "react-bootstrap/Image";
 
 export class MyNoogler extends Component {
   state = {
     profileImg:
-      "https://img.talkandroid.com/uploads/2016/06/google_app_icon.png",
+     "https://img.talkandroid.com/uploads/2016/06/google_app_icon.png",
   };
 
   imageHandler = (e) => {
@@ -26,7 +26,7 @@ export class MyNoogler extends Component {
         <div className="container">
 
         <Image
-          src={profileImg}
+          src={profileImg == "https://img.talkandroid.com/uploads/2016/06/google_app_icon.png" ? jordansPic: profileImg}
           roundedCircle
           style={{
             width: "200px",

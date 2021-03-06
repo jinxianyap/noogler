@@ -15,17 +15,17 @@ const Dashboardbox = () => {
                   <div className='row'>
                     <div className='col-4'>
                     <h6>
-                      Viewed Opportunities
+                      My Opportunities
                     </h6>
                     </div>
                     <div className='col-4'>
                     <h6>
-                      Saved Opportunities
+                      View Events
                     </h6>
                     </div>
                     <div className='col-4'>
                     <h6>
-                      Think about it
+                      Volunteering
                     </h6>
                     </div>
                   </div>
