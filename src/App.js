@@ -1,14 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import ChatScreen from './components/chatscreen';
+import Profile_image from "./Profile_image";
 
 function App() {
   return (
-    <div className="body">
-      <div className="App">
-        <ChatScreen />;
-      </div>
+    <div className="App">
+    <Profile_image/>
     </div>
   );
 }
