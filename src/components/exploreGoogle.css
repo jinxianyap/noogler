@@ -3,6 +3,7 @@
     color: white;
 }
 
+
 .App-logo {
     height: 40vmin;
     pointer-events: none;
@@ -64,4 +65,18 @@
     background-color: #282c34 !important;
     border: 1px solid white !important;
     border-bottom: 1px solid #282c34 !important;
+}
+
+.card-text {
+    color: black;
+}
+
+.joinButtonPlacement {
+    color: white ;
+    font-weight: bold;
+
+}
+
+.joinButtonPlacement.btn-primary:hover {
+    color:black ;
 }
