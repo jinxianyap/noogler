@@ -5,7 +5,7 @@ const Dashboardbox = () => {
     <div>
       <Container fluid="md" style={{marginTop: '40px'}}>
         <Row md={3}>
-          <Col style={{ marginTop: "20px", marginLeft: "300px" }}>
+          <Col style={{ marginTop: "20px", marginLeft: "0px" }}>
             <Card style={{ width: "40rem" }}>
               <Card.Body>
                 <h5>Dashboard</h5>

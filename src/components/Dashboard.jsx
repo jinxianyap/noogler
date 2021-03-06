@@ -1,12 +1,13 @@
 import React from "react";
 import { Card, Button, Container, Row, Col } from "react-bootstrap";
+import './Dashboard.css';
 
 const Dashboard = () => {
   return (
-    <div style={{marginLeft: '100px'}}>
+    <div >
       <Container fluid="md" >
         <Row md={3}>
-          <Col style={{ marginTop: "20px" }}>
+          <Col className = "cardSpacing" style={{ marginTop: "20px" }}>
             <Card style={{ width: "15rem" }}>
               <Card.Img
                 variant="top"
@@ -22,7 +23,7 @@ const Dashboard = () => {
             </Card>
           </Col>
 
-          <Col style={{ marginTop: "20px" }}>
+          <Col className = "cardSpacing" style={{ marginTop: "20px" }}>
             <Card style={{ width: "15rem" }}>
               <Card.Img
                 variant="top"
@@ -38,7 +39,7 @@ const Dashboard = () => {
             </Card>
           </Col>
 
-          <Col style={{ marginTop: "20px" }}>
+          <Col className = "cardSpacing" style={{ marginTop: "20px" }}>
             <Card style={{ width: "15rem" }}>
               <Card.Img
                 variant="top"

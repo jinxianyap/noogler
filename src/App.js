@@ -8,7 +8,9 @@ import NooglerProfile from "./components/NooglerProfile";
 
 function App() {
   return (
+    <div className = "body">
       <NooglerProfile />
+    </div>
   );
 }
 
