@@ -1,3 +1,8 @@
+.exploregoogle-page {
+    background-color: #282c34;
+    color: white;
+}
+
 .App-logo {
     height: 40vmin;
     pointer-events: none;
@@ -11,13 +16,13 @@
 
 .App-header {
     background-color: #282c34;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+    padding: 2rem 0 0.5rem 0;
 }
 
 .App-link {
@@ -32,4 +37,31 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+.nav-tabs {
+    border-bottom: 1px solid white !important;
+}
+
+#explore-tab-group-tab-opportunities,
+#explore-tab-group-tab-events,
+#explore-tab-group-tab-groups {
+    background-color: #282c34 !important;
+    border: none;
+    border-bottom: 1px solid white !important;
+    color: white;
+}
+
+#explore-tab-group-tab-opportunities:hover,
+#explore-tab-group-tab-events:hover,
+#explore-tab-group-tab-groups:hover {
+    background-color: #707070 !important;
+}
+
+#explore-tab-group-tab-opportunities.active,
+#explore-tab-group-tab-events.active,
+#explore-tab-group-tab-groups.active {
+    background-color: #282c34 !important;
+    border: 1px solid white !important;
+    border-bottom: 1px solid #282c34 !important;
 }
