@@ -118,25 +118,25 @@ class ChatScreen extends React.Component {
 
         <div className="speech-box sb1 animate__animated animate__fadeIn animate__delay-2s">Hey! How can I help? Open the yellow chat box to talk!</div>
 
-        <ThemeProvider theme={theme} className = "themeCenter">
-          <ChatBot
-            steps={steps}
-            floating = {true}
-            floatingStyle = {{
-              left: 'calc(50% - 28px)',
-              right: 'initial',
-              transformOrigin: "bottom center",
-              borderRadius: 0,
-            }}
-            style = {{
-              left: 'calc(50% - 175px)',
-            }}
-            className = "animate__animated animate__fadeIn animate__delay-4s"
-          />
-        </ThemeProvider>
+        <div>
+          <ThemeProvider theme={theme} className = "themeCenter">
+            <ChatBot
+              steps={steps}
+              floating = {true}
+              floatingStyle = {{
+                left: 'calc(50% - 28px)',
+                right: 'initial',
+                transformOrigin: "bottom center",
+                borderRadius: 0,
+              }}
+              style = {{
+                left: 'calc(50% - 175px)',
+              }}
+            />
+          </ThemeProvider>
+        </div>
 
-
-        <div className="buttonsBar" className = "animate__animated animate__fadeIn animate__delay-3s">
+        <div className="buttonsBar animate__animated animate__fadeIn animate__delay-3s" style = {{ zIndex: 3 }}>
           <Link to = "/chat">
             <Button
               variant="primary"
