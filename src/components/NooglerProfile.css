@@ -18,26 +18,27 @@
 .info-box {
   width: calc(100%-3rem);
   background-color: #4285F4;
-  height: calc(100%-2rem);
-  padding-bottom: 1rem;
+  height: 400px;
+  padding: 1rem 0;
   margin: 1rem;
   margin-top: 0;
   margin-left: 2rem;
   border-radius: 10px;
   border: 1px solid white;
-  text-align: left;
-}
-
-.info-title {
-  margin-left: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  margin-top: 1rem;
 }
 
 .info-detail {
-  margin: 0;
-  margin-left: 1rem;
+  margin: 1rem 0.8rem;
+  color: #282c34;
+  background-color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 0.3rem;
+}
+
+.noogler-links {
+  margin: 0 1rem 1rem 2rem;
+  font-weight: 600;
 }
 
 .box3 {

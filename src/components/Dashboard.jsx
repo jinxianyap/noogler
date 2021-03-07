@@ -11,49 +11,58 @@ const Dashboard = () => {
       <Container fluid="md" >
         <Row md={3}>
           <Col className = "cardSpacing">
-            <Card style={{ width: "15rem" }}>
+            <Card style={{ width: "18rem", height: "100%" }}>
               <Card.Img
                 variant="top"
                 src={michellePic}
-                style={{ height: 125 }}
+                style={{ height: "60%" }}
               />
               <Card.Body>
                 <Card.Text>
-                  Click to view more information about Residents
+                  Catch up on Michelle Obama's speech last week
                 </Card.Text>
-                <Button variant="primary">View Residents</Button>
+                <Button variant="primary" onClick = {(e) => {
+                  e.preventDefault();
+                  window.location.href='https://www.youtube.com/watch?v=St1aRfh2RV4&t=549s ';
+                }}>View</Button>
               </Card.Body>
             </Card>
           </Col>
 
           <Col className = "cardSpacing">
-            <Card style={{ width: "15rem" }}>
+            <Card style={{ width: "18rem", height: "100%" }}>
               <Card.Img
                 variant="top"
                 src={volunteering}
-                style={{ height: 125 }}
+                style={{ height: "60%" }}
               />
               <Card.Body>
                 <Card.Text>
-                  Click to view more information about Residents
+                  Clean-up of the Dodder Park area with local volunteers
                 </Card.Text>
-                <Button variant="primary">View Residents</Button>
+                <Button variant="primary" onClick = {(e) => {
+                  e.preventDefault();
+                  window.location.href='https://www.leavenotraceireland.org/corporate-volunteering-google-staff-help-local-community/ ';
+                }}>View</Button>
               </Card.Body>
             </Card>
           </Col>
 
           <Col className = "cardSpacing">
-            <Card style={{ width: "15rem" }}>
+            <Card style={{ width: "18rem", height: "100%" }}>
               <Card.Img
                 variant="top"
                 src={googleOffice}
-                style={{ height: 125 }}
+                style={{ height: "60%" }}
               />
               <Card.Body>
                 <Card.Text>
-                  Click to view more information about Residents
+                  Lessons from an MBA intern turned full-time Googler
                 </Card.Text>
-                <Button variant="primary">View Residents</Button>
+                <Button variant="primary" onClick = {(e) => {
+                  e.preventDefault();
+                  window.location.href='http://google.com';
+                }}>View</Button>
               </Card.Body>
             </Card>
           </Col>
