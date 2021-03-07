@@ -181,7 +181,7 @@ class ChatScreen extends React.Component {
           </Link>
 
           <Link>
-            <Button
+            <Button 
               variant="danger"
               size="lg"
               className="buttonPlacement"
@@ -189,15 +189,17 @@ class ChatScreen extends React.Component {
                 backgroundColor: "#DB4437",
                 borderColor: "#DB4437",
               }}
+              onClick={() => window.open("https://support.google.com/?hl=en")}
             >
-
               Help
             </Button>
           </Link>
+          
         </div>
       </div>
     )
   }
 }
+
 
 export default ChatScreen;

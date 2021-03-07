@@ -23,6 +23,7 @@ import volunteer from "../assets/Volunteer.PNG"
 import manage from "../assets/Manage.JPG"
 import cloud from "../assets/Cloud.JPG"
 import host from "../assets/Host.JPG"
+import praying from "../assets/praying.JPG"
 
 
 export const groupsData = [
@@ -68,7 +69,7 @@ export const groupsData = [
     },
     {
         name: "Inter-Belief Network",
-        img: VRGN,
+        img: praying,
         shortDesc: "IBN focuses on create a culture of inclusion, tolerance, and mutual understanding at Google for a diversity of beliefs.",
         desc: "The Inter Belief Network (IBN) aims to create a culture of inclusion, tolerance, and mutual understanding at Google for a diversity of beliefs, where Googlers of all beliefs feel welcome, included, and supported. IBN also aims to ensure that the voices of belief-based communities are represented in Google’s products. IBN consists of multiple member chapters representing specific communities of interest, including but not limited to: Buddhists, Christians, Jewglers, Muslims.",
     },
