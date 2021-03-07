@@ -1,3 +1,4 @@
+
 import React from "react";
 import jordansPic from "../assets/jordansCirclePic.jpg";
 import Image from "react-bootstrap/Image";
@@ -159,7 +160,7 @@ class ChatScreen extends React.Component {
                 borderColor: "#0F9D58",
               }}
             >    
-              My Google
+              My Goog
             </Button>
           </Link>
 
@@ -187,6 +188,7 @@ class ChatScreen extends React.Component {
                 borderColor: "#DB4437",
               }}
             >
+
               Help
             </Button>
           </Link>

@@ -33,7 +33,7 @@ function NooglerProfile() {
           <div className = "box4NameTitle">
 
             <h1 id="pageHeading">
-              <span style={{color: 'white', textAlign: "center", fontSize: 115}}>My </span>
+              <span style={{color: 'white', textAlign: "center", fontSize: 115}}>NetSocial </span>
 
               <span style={{color: '#4285F4', fontSize: 115}}>G</span>
               <span style={{color: '#DB4437', fontSize: 115}}>o</span>
@@ -43,7 +43,7 @@ function NooglerProfile() {
               <span style={{color: '#DB4437', fontSize: 115}}>e</span>
             </h1>
             <h1 style = {{ fontSize: 38}}>Jordan Edoimioya</h1>
-            <h1 style = {{ fontSize: 30}}>Software Engineer L4</h1>
+            <h1 style = {{ fontSize: 30}}>Software Engineer intern </h1>
 
 
           </div>
