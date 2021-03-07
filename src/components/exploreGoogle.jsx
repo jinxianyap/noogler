@@ -14,7 +14,7 @@ class ExploreGoogle extends React.Component {
       show: new Map(),
       clicked: false
     };
-      
+
     this.setShow = (key, val) => {
       var map = this.state.show;
       map[key] = val;
@@ -24,7 +24,7 @@ class ExploreGoogle extends React.Component {
     this.setClick = (val) =>{
       this.setState({clicked: val});
     };
-    
+
     this.groups = groupsData;
     this.events = eventsData;
     this.opportunities = opportunitiesData;
@@ -47,7 +47,7 @@ class ExploreGoogle extends React.Component {
       this.setState({show: map});
     });
   }
-  
+
   getCard(data, key) {
     return (
       <Col xs={3} key={key} className="item-cols" style={{padding: "0.5rem"}}>
@@ -81,20 +81,20 @@ class ExploreGoogle extends React.Component {
             className="joinButtonPlacement"
             style = {this.state.clicked
               ?
-              { 
+              {
                 alignItems: 'center',
                 backgroundColor: "grey",
-                borderColor: "grey",                   
+                borderColor: "grey",
               }
-              : 
+              :
               { alignItems: 'center',
                 backgroundColor: "#0F9D58",
-                borderColor: "#0F9D58"         
+                borderColor: "#0F9D58"
               }}
             onClick = {() => this.setClick(true)}
             disabled = {this.state.clicked}
           >
-            {this.state.clicked ? "Pending Confirmation" : "Join" } 
+            {this.state.clicked ? "Pending Confirmation" : "Join" }
           </Button>
         </Modal.Body>
       </Modal>
@@ -135,9 +135,9 @@ class ExploreGoogle extends React.Component {
             <span style={{ color: "#DB4437" }}>e</span>
           </h1>
 
-          <Link to="/profile" id="explore-chat-btn" className="btn btn-primary btn-lg active" style={{fontWeight: "bold", color: "white", backgroundColor: "#DB4437", border: "1px solid #DB4437"}}>Chat</Link>
-          <Link to="/chat" id="profile-btn" className="btn btn-primary btn-lg active" style={{fontWeight: "bold", color: "white", backgroundColor: "#0F9D58", border: "1px solid #0F9D58"}}>My Google</Link>
-          
+          <Link to="/chat" id="explore-chat-btn" className="btn btn-primary btn-lg active" style={{fontWeight: "bold", color: "white", backgroundColor: "#DB4437", border: "1px solid #DB4437"}}>Chat</Link>
+          <Link to="/profile" id="profile-btn" className="btn btn-primary btn-lg active" style={{fontWeight: "bold", color: "white", backgroundColor: "#0F9D58", border: "1px solid #0F9D58"}}>My Google</Link>
+
 
         </header>
         <div className="explore-content">

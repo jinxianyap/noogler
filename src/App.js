@@ -5,6 +5,7 @@ import ChatScreen from './components/chatscreen';
 import ExploreGoogle from './components/exploreGoogle';
 import NooglerProfile from './components/NooglerProfile';
 import { Route, Switch } from 'react-router-dom';
+import 'animate.css';
 
 function App() {
   return (

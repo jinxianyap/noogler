@@ -90,7 +90,7 @@ class ChatScreen extends React.Component {
   render() {
     return (
       <div className="chatscreen-page">
-        <h1>
+        <h1 className = "animate__animated animate__fadeIn">
           <Badge
             variant="secondary"
             style={{
@@ -104,6 +104,7 @@ class ChatScreen extends React.Component {
         <Image
           src={chatBotimage}
           roundedCircle
+          className = "animate__animated animate__fadeIn animate__delay-1s"
           style={{
             width: "250px",
             height: "250px",
@@ -115,7 +116,7 @@ class ChatScreen extends React.Component {
           }}
         />
 
-        <div className="speech-box sb1">Hey! How can I help? Open the yellow chat box to talk!</div>
+        <div className="speech-box sb1 animate__animated animate__fadeIn animate__delay-2s">Hey! How can I help? Open the yellow chat box to talk!</div>
 
         <ThemeProvider theme={theme} className = "themeCenter">
           <ChatBot
@@ -130,11 +131,12 @@ class ChatScreen extends React.Component {
             style = {{
               left: 'calc(50% - 175px)',
             }}
+            className = "animate__animated animate__fadeIn animate__delay-4s"
           />
         </ThemeProvider>
 
 
-        <div className="buttonsBar">
+        <div className="buttonsBar" className = "animate__animated animate__fadeIn animate__delay-3s">
           <Link to = "/chat">
             <Button
               variant="primary"
@@ -159,8 +161,8 @@ class ChatScreen extends React.Component {
                 backgroundColor: "#0F9D58",
                 borderColor: "#0F9D58",
               }}
-            >    
-              My Goog
+            >
+              My Google
             </Button>
           </Link>
 
@@ -177,7 +179,7 @@ class ChatScreen extends React.Component {
               Explore
             </Button>
           </Link>
-          
+
           <Link>
             <Button
               variant="danger"
