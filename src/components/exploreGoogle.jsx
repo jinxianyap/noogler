@@ -10,12 +10,14 @@ class ExploreGoogle extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: false,
+      show: new Map(),
       clicked: false
     };
       
-    this.setShow = (val) => {
-      this.setState({show: val});
+    this.setShow = (key, val) => {
+      var map = this.state.show;
+      map[key] = val;
+      this.setState({show: map});
     };
 
     this.setClick = (val) =>{
@@ -25,12 +27,30 @@ class ExploreGoogle extends React.Component {
     this.groups = groupsData;
     this.events = eventsData;
     this.opportunities = opportunitiesData;
+
+    this.groups.forEach((dt, key) => {
+      var map = this.state.show;
+      map[dt.name] = false;
+      this.setState({show: map});
+    });
+
+    this.events.forEach((dt, key) => {
+      var map = this.state.show;
+      map[dt.name] = false;
+      this.setState({show: map});
+    });
+
+    this.opportunities.forEach((dt, key) => {
+      var map = this.state.show;
+      map[dt.name] = false;
+      this.setState({show: map});
+    });
   }
   
   getCard(data, key) {
     return (
-      <Col xs={3} key={key} className="item-cols">
-        <Card onClick={() => this.setShow(true)}>
+      <Col xs={3} key={key} className="item-cols" style={{padding: "0.5rem"}}>
+        <Card onClick={() => this.setShow(data.name, true)} style={{height: "100%"}}>
           <Card.Img variant="top" src={data.img}/>
           <Card.Body className="card-text">
             <Card.Title>{data.name}</Card.Title>
@@ -40,8 +60,8 @@ class ExploreGoogle extends React.Component {
           </Card.Body>
         </Card>
         <Modal
-          show={this.state.show}
-          onHide={() => {this.setShow(false); this.setClick(false);}}
+          show={this.state.show[data.name]}
+          onHide={() => {this.setShow(data.name, false); setTimeout(() => this.setClick(false), 500)}}
           dialogClassName="modal-90w"
           aria-labelledby="example-custom-modal-styling-title"
         >
@@ -80,16 +100,19 @@ class ExploreGoogle extends React.Component {
     );
   }
 
-  generateGrid(data) {
+  generateGrid(data, key_prefix) {
     var rows = [];
     for (var i = 0; i < data.length; i = i + 4) {
-      var row = <Row>
-        {data.slice(i, i+4).map((dt, key) => this.getCard(dt, key))}
+      var row = <Row key={rows.length}>
+        {data.slice(i, i+4).map((dt, key) => {
+          return this.getCard(dt, key + key_prefix);
+        })
+        }
       </Row>;
       rows.push(row);
     }
     return (
-      <Container className="item-cards">
+      <Container className="item-cards" style={{paddingTop: "1rem"}}>
         {rows}
       </Container>
     );
@@ -113,13 +136,13 @@ class ExploreGoogle extends React.Component {
         <div className="explore-content">
           <Tabs defaultActiveKey="groups" id="explore-tab-group">
             <Tab eventKey="groups" title="Groups" className="explore-tabs">
-                {this.generateGrid(this.groups)}
+                {this.generateGrid(this.groups, "groups")}
             </Tab>
             <Tab eventKey="events" title="Events" className="explore-tabs">
-            {this.generateGrid(this.events)}
+            {this.generateGrid(this.events, "events")}
             </Tab>
             <Tab eventKey="opportunities" title="Opportunities" className="explore-tabs">
-            {this.generateGrid(this.opportunities)}
+            {this.generateGrid(this.opportunities, "opps")}
             </Tab>
           </Tabs>
         </div>
