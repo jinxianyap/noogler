@@ -49,6 +49,11 @@
     border-bottom: 1px solid white !important;
 }
 
+.item-cards.container {
+    width: auto;
+    height: auto;
+}
+
 #explore-tab-group-tab-opportunities,
 #explore-tab-group-tab-events,
 #explore-tab-group-tab-groups {
