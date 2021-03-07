@@ -71,6 +71,7 @@ class ExploreGoogle extends React.Component {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
+          <p>Members: {data.members}</p>
           <p>
             {data.desc}
           </p>
