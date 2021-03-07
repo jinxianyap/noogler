@@ -23,7 +23,7 @@ export class MyNoogler extends Component {
     const { profileImg } = this.state;
 
     return (
-      <div className="mynoogler-page">
+      <div className="mynoogler-page animate__animated animate__fadeIn animate__delay-1s">
         <div className="mynoogler-container">
 
         <Image

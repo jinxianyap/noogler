@@ -8,7 +8,7 @@ import VR from '../assets/vrEvening.JPG';
 
 const Dashboard = () => {
   return (
-    <div >
+    <div className = "animate__animated animate__fadeIn animate__delay-3s">
       <Container fluid="md" >
         <Row md={3}>
           <Col className = "cardSpacing">
