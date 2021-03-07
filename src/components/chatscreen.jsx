@@ -137,7 +137,7 @@ class ChatScreen extends React.Component {
         </div>
 
         <div className="buttonsBar animate__animated animate__fadeIn animate__delay-3s" style = {{ zIndex: 3 }}>
-          <Link to = "/chat">
+          <Link to = "/profile" >
             <Button
               variant="primary"
               size="lg"
@@ -148,7 +148,6 @@ class ChatScreen extends React.Component {
                 borderColor: "#4285F4",
               }}
             >
-          
               My Profile
             </Button>
           </Link>
@@ -168,7 +167,7 @@ class ChatScreen extends React.Component {
           </Link>
 
           <Link>
-            <Button 
+            <Button
               variant="danger"
               size="lg"
               className="buttonPlacement"
@@ -181,7 +180,7 @@ class ChatScreen extends React.Component {
               Help
             </Button>
           </Link>
-          
+
         </div>
       </div>
     )
