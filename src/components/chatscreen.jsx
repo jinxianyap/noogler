@@ -148,21 +148,8 @@ class ChatScreen extends React.Component {
                 borderColor: "#4285F4",
               }}
             >
-              Home
-            </Button>
-          </Link>
-
-          <Link to = "/profile">
-            <Button
-              variant="success"
-              size="lg"
-              className="buttonPlacement"
-              style={{
-                backgroundColor: "#0F9D58",
-                borderColor: "#0F9D58",
-              }}
-            >
-              My Google
+          
+              My Profile
             </Button>
           </Link>
 
