@@ -2,6 +2,7 @@ import React from 'react';
 import MyNoogler from "./MyNoogler.jsx";
 import Dashboard from "./Dashboard.jsx";
 import Dashboardbox from "./Dashboardbox.jsx";
+import { Link } from "react-router-dom";
 import "./NooglerProfile.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -12,13 +13,16 @@ function NooglerProfile() {
         <div className = "box2">
           <MyNoogler />
           <div className = "info-box">
-            <p className="info-title">Email Address</p>
-            <p className="info-detail">jordan@gmail.com</p>
-            <p className="info-title">Date of Birth</p>
-            <p className="info-detail">7 March 2021</p>
-            <p className="info-title">Gender</p>
-            <p className="info-detail">M</p>
+            <h3 style={{color: "#282c34", fontWeight: "600"}}>My Details</h3>
+            <p className="info-detail">Jordan</p>
+            <p className="info-detail">Edoimioya</p>
+            <p className="info-detail">09/10/2001</p>
+            <p className="info-detail">London, United Kingdom</p>
+            <p className="info-detail">Black African</p>
+            <p className="info-detail">British</p>
           </div>
+          <Link to="/chat" className="noogler-links btn btn-primary btn-lg active" style={{backgroundColor: "#DB4437", border: "1px solid #DB4437"}}>Chat</Link>
+          <Link to="/" className="noogler-links btn btn-primary btn-lg active" style={{backgroundColor: "#F4B400", border: "1px solid #F4B400"}}>Explore</Link>
         </div>
 
         <div className = "box3">
