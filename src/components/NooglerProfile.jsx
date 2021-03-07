@@ -11,8 +11,14 @@ function NooglerProfile() {
     <div className = "box1">
         <div className = "box2">
           <MyNoogler />
-          <h4 className = "bigtext">Info 1</h4>
-          <h4 className = "bigtext">Info 2</h4>
+          <div className = "info-box">
+            <p className="info-title">Email Address</p>
+            <p className="info-detail">jordan@gmail.com</p>
+            <p className="info-title">Date of Birth</p>
+            <p className="info-detail">7 March 2021</p>
+            <p className="info-title">Gender</p>
+            <p className="info-detail">M</p>
+          </div>
         </div>
 
         <div className = "box3">

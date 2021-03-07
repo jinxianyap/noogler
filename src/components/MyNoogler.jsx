@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./styles.css";
+import './MyNoogler.css';
 import jordansPic from "../assets/jordansCirclePic.jpeg";
 import Image from "react-bootstrap/Image";
 
@@ -22,8 +23,8 @@ export class MyNoogler extends Component {
     const { profileImg } = this.state;
 
     return (
-      <div className="page">
-        <div className="container">
+      <div className="mynoogler-page">
+        <div className="mynoogler-container">
 
         <Image
           src={profileImg == "https://img.talkandroid.com/uploads/2016/06/google_app_icon.png" ? jordansPic: profileImg}
@@ -36,6 +37,8 @@ export class MyNoogler extends Component {
             borderRight: "7px solid #4285F4",
             borderBottom: "7px solid #0F9D58",
             borderLeft: "7px solid #F4B400",
+            margin: "2rem",
+            marginBottom: "0"
           }}
         />
 

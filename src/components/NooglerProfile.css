@@ -10,8 +10,34 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 100vh;
+  color: white;
+}
+
+.info-box {
+  width: calc(100%-3rem);
+  background-color: #4285F4;
+  height: calc(100%-2rem);
+  padding-bottom: 1rem;
+  margin: 1rem;
+  margin-top: 0;
+  margin-left: 2rem;
+  border-radius: 10px;
+  border: 1px solid white;
+  text-align: left;
+}
+
+.info-title {
+  margin-left: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.info-detail {
+  margin: 0;
+  margin-left: 1rem;
 }
 
 .box3 {

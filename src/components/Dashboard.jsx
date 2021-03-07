@@ -10,7 +10,7 @@ const Dashboard = () => {
     <div >
       <Container fluid="md" >
         <Row md={3}>
-          <Col className = "cardSpacing" style={{ marginTop: "20px" }}>
+          <Col className = "cardSpacing">
             <Card style={{ width: "15rem" }}>
               <Card.Img
                 variant="top"
@@ -26,7 +26,7 @@ const Dashboard = () => {
             </Card>
           </Col>
 
-          <Col className = "cardSpacing" style={{ marginTop: "20px" }}>
+          <Col className = "cardSpacing">
             <Card style={{ width: "15rem" }}>
               <Card.Img
                 variant="top"
@@ -42,7 +42,7 @@ const Dashboard = () => {
             </Card>
           </Col>
 
-          <Col className = "cardSpacing" style={{ marginTop: "20px" }}>
+          <Col className = "cardSpacing">
             <Card style={{ width: "15rem" }}>
               <Card.Img
                 variant="top"
