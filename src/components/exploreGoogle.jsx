@@ -105,7 +105,7 @@ class ExploreGoogle extends React.Component {
   generateGrid(data, key_prefix) {
     var rows = [];
     for (var i = 0; i < data.length; i = i + 4) {
-      var row = <Row key={rows.length}>
+      var row = <Row key={rows.length} className ="animate__animated animate__fadeIn">
         {data.slice(i, i+4).map((dt, key) => {
           return this.getCard(dt, key + key_prefix);
         })
@@ -123,7 +123,7 @@ class ExploreGoogle extends React.Component {
   render() {
     return (
       <div className="exploregoogle-page">
-        <header className="App-header">
+        <header className="App-header animate__animated animate__fadeIn">
           <h1 id="pageHeading">
             Explore
             {/* google logo colouring */}
@@ -140,7 +140,7 @@ class ExploreGoogle extends React.Component {
 
 
         </header>
-        <div className="explore-content">
+        <div className="explore-content animate__animated animate__fadeIn animate__delay-1s">
           <Tabs defaultActiveKey="groups" id="explore-tab-group">
             <Tab eventKey="groups" title="Groups" className="explore-tabs">
                 {this.generateGrid(this.groups, "groups")}
