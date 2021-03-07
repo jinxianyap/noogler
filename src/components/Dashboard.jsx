@@ -2,8 +2,9 @@ import React from "react";
 import { Card, Button, Container, Row, Col } from "react-bootstrap";
 import './Dashboard.css';
 import michellePic from '../assets/michelle.jpeg';
-import volunteering from '../assets/volunteering.jpeg';
-import googleOffice from '../assets/googleOffice.jpeg';
+import BGN from '../assets/BGNlogo.jpg';
+import VR from '../assets/vrEvening.JPG';
+
 
 const Dashboard = () => {
   return (
@@ -33,16 +34,16 @@ const Dashboard = () => {
             <Card style={{ width: "18rem", height: "100%" }}>
               <Card.Img
                 variant="top"
-                src={volunteering}
+                src={BGN}
                 style={{ height: "60%" }}
               />
               <Card.Body>
                 <Card.Text>
-                  Clean-up of the Dodder Park area with local volunteers
+                  Upcoming events: Volunteer at the BGN Hackathon 2021
                 </Card.Text>
                 <Button variant="primary" onClick = {(e) => {
                   e.preventDefault();
-                  window.location.href='https://www.leavenotraceireland.org/corporate-volunteering-google-staff-help-local-community/ ';
+                  window.location.href='https://diversity.google/';
                 }}>View</Button>
               </Card.Body>
             </Card>
@@ -52,16 +53,16 @@ const Dashboard = () => {
             <Card style={{ width: "18rem", height: "100%" }}>
               <Card.Img
                 variant="top"
-                src={googleOffice}
+                src={VR}
                 style={{ height: "60%" }}
               />
               <Card.Body>
                 <Card.Text>
-                  Lessons from an MBA intern turned full-time Googler
+                  Explore Virtual Reality and Computer-generated stimulation
                 </Card.Text>
                 <Button variant="primary" onClick = {(e) => {
                   e.preventDefault();
-                  window.location.href='http://google.com';
+                  window.location.href='https://arvr.google.com/vr/';
                 }}>View</Button>
               </Card.Body>
             </Card>

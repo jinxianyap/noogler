@@ -5,6 +5,9 @@ import Dashboardbox from "./Dashboardbox.jsx";
 import { Link } from "react-router-dom";
 import "./NooglerProfile.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { ImLocation } from 'react-icons/im';
+import { MdDateRange } from 'react-icons/md';
+
 
 
 function NooglerProfile() {
@@ -16,14 +19,15 @@ function NooglerProfile() {
             <h3 style={{color: "#282c34", fontWeight: "600"}}>My Details</h3>
             <p className="info-detail">Jordan</p>
             <p className="info-detail">Edoimioya</p>
-            <p className="info-detail">09/10/2001</p>
-            <p className="info-detail">London, United Kingdom</p>
-            <p className="info-detail">Black African</p>
-            <p className="info-detail">British</p>
+            <p className="info-detail"><MdDateRange /> 09/10/2001</p>
+            <p className="info-detail"><ImLocation /> London, UK</p>
+            <p className="info-detail">Ethnicity: Black African</p>
+            <p className="info-detail">Nationality: British 🇬🇧</p>
           </div>
-          <Link to="/chat" className="noogler-links btn btn-primary btn-lg active" style={{backgroundColor: "#DB4437", border: "1px solid #DB4437"}}>Chat</Link>
+
+          <Link to="/chat" className="noogler-links btn btn-primary btn-lg active" style={{backgroundColor: "#DB4437", border: "1px solid #DB4437", marginTop: "7%"}}>Chat</Link>
           <Link to="/" className="noogler-links btn btn-primary btn-lg active" style={{backgroundColor: "#F4B400", border: "1px solid #F4B400"}}>Explore</Link>
-        </div>
+          </div>
 
         <div className = "box3">
           <div className = "box4NameTitle">
@@ -31,7 +35,7 @@ function NooglerProfile() {
             <h1 id="pageHeading">
               <span style={{color: 'white', textAlign: "center", fontSize: 115}}>My </span>
 
-              <span style={{color: '#4285F4', fontSize: 115}}>N</span>
+              <span style={{color: '#4285F4', fontSize: 115}}>G</span>
               <span style={{color: '#DB4437', fontSize: 115}}>o</span>
               <span style={{color: '#F4B400', fontSize: 115}}>o</span>
               <span style={{color: '#4285F4', fontSize: 115}}>g</span>

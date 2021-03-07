@@ -134,7 +134,11 @@ class ExploreGoogle extends React.Component {
             <span style={{ color: "#0F9D58" }}>l</span>
             <span style={{ color: "#DB4437" }}>e</span>
           </h1>
-          <Link to="/chat" id="explore-chat-btn" className="btn btn-primary btn-lg active" style={{color: "white"}}>Chat</Link>
+
+          <Link to="/profile" id="explore-chat-btn" className="btn btn-primary btn-lg active" style={{fontWeight: "bold", color: "white", backgroundColor: "#DB4437", border: "1px solid #DB4437"}}>Chat</Link>
+          <Link to="/chat" id="profile-btn" className="btn btn-primary btn-lg active" style={{fontWeight: "bold", color: "white", backgroundColor: "#0F9D58", border: "1px solid #0F9D58"}}>My Google</Link>
+          
+
         </header>
         <div className="explore-content">
           <Tabs defaultActiveKey="groups" id="explore-tab-group">

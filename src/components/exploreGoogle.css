@@ -97,3 +97,10 @@
     right: 2rem;
     margin: 0;
 }
+
+#profile-btn {
+    color: white;
+    position: absolute;
+    right: 8rem;
+    margin: 0;
+}

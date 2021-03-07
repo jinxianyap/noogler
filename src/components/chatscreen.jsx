@@ -5,6 +5,8 @@ import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
+import { Link } from "react-router-dom";
+import chatBotimage from '../assets/google-assistant-logo-lead.jpg'
 
 import "./chatscreen.css";
 
@@ -23,7 +25,7 @@ const theme = {
 const steps = [
   {
     id: '1',
-    message: 'Hey Noogler! What are you looking for?',
+    message: 'Hey Googler! What are you looking for?',
     trigger: '2',
   },
   {
@@ -67,7 +69,7 @@ const steps = [
   },
   {
     id: '8',
-    message: 'Press the green My Noogler button!',
+    message: 'Press the green My Googler button!',
     trigger: "5",
   },
   {
@@ -99,7 +101,7 @@ class ChatScreen extends React.Component {
           </Badge>
         </h1>
         <Image
-          src={jordansPic}
+          src={chatBotimage}
           roundedCircle
           style={{
             width: "250px",
@@ -132,67 +134,62 @@ class ChatScreen extends React.Component {
 
 
         <div className="buttonsBar">
-          <Button
-            variant="primary"
-            size="lg"
-            className="buttonPlacement"
-            style={{
-              marginLeft: "60px",
-              backgroundColor: "#4285F4",
-              borderColor: "#4285F4",
-            }}
-            onClick = {(e) => {
-              e.preventDefault();
-              window.location.href='http://google.com';
-            }}
-          >
-            Home
-          </Button>
-          <Button
-            variant="success"
-            size="lg"
-            className="buttonPlacement"
-            style={{
-              backgroundColor: "#0F9D58",
-              borderColor: "#0F9D58",
-            }}
-            onClick = {(e) => {
-              e.preventDefault();
-              window.location.href='http://google.com';
-            }}
-          >
-            My Noogle
-          </Button>
-          <Button
-            variant="warning"
-            size="lg"
-            className="buttonPlacement"
-            style={{
-              backgroundColor: "#F4B400",
-              borderColor: "#F4B400",
-            }}
-            onClick = {(e) => {
-              e.preventDefault();
-              window.location.href='http://google.com';
-            }}
-          >
-            Explore
-          </Button>
-          <Button
-            variant="danger"
-            size="lg"
-            className="buttonPlacement"
-            style={{
-              backgroundColor: "#DB4437",
-              borderColor: "#DB4437",
-            }}
-            onClick = {(e) => {
-              e.preventDefault();
-              window.location.href='http://google.com';
-            }}
-          >
-            Help
-          </Button>
+          <Link to = "/chat">
+            <Button
+              variant="primary"
+              size="lg"
+              className="buttonPlacement"
+              style={{
+                marginLeft: "60px",
+                backgroundColor: "#4285F4",
+                borderColor: "#4285F4",
+              }}
+            >
+              Home
+            </Button>
+          </Link>
+
+          <Link to = "/profile">
+            <Button
+              variant="success"
+              size="lg"
+              className="buttonPlacement"
+              style={{
+                backgroundColor: "#0F9D58",
+                borderColor: "#0F9D58",
+              }}
+            >    
+              My Google
+            </Button>
+          </Link>
+
+          <Link to = "/">
+            <Button
+              variant="warning"
+              size="lg"
+              className="buttonPlacement"
+              style={{
+                backgroundColor: "#F4B400",
+                borderColor: "#F4B400",
+              }}
+            >
+              Explore
+            </Button>
+          </Link>
+          
+          <Link>
+            <Button
+              variant="danger"
+              size="lg"
+              className="buttonPlacement"
+              style={{
+                backgroundColor: "#DB4437",
+                borderColor: "#DB4437",
+              }}
+            >
+              Help
+            </Button>
+          </Link>
         </div>
       </div>
     )
