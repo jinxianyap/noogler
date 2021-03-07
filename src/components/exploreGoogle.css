@@ -85,3 +85,10 @@
 .joinButtonPlacement.btn-primary:hover {
     color:black ;
 }
+
+#explore-chat-btn {
+    color: white;
+    position: absolute;
+    right: 2rem;
+    margin: 0;
+}
